@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INKBLOOD — Estúdio de Tatuagem</title>
+
+  <!-- CSS Externo (Requisito) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts (Requisito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Boxicons (Requisito: ícones) -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome (Requisito: ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       NAVEGAÇÃO
+       =========================== -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-dot"></span>
+        INKBLOOD
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="nav-cta" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+        Agendar Sessão
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===========================
+         SEÇÃO 1 — INÍCIO / HERO
+         =========================== -->
+    <section id="inicio">
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="bx bxs-circle"></i>
+            Estúdio Aberto — São Paulo, SP
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line-solid">ARTE</span><br>
+            <span class="line-accent">NA</span><br>
+            <span class="line-red">PELE</span>
+          </h1>
+
+          <p class="hero-desc">
+            Tatuagens autorais com traço único. Da ideia ao resultado final,
+            transformamos sua história em arte permanente com segurança,
+            higiene e técnica de ponta.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">
+              <i class="fas fa-arrow-right"></i>
+              Ver Portfólio
+            </button>
+            <button class="btn-outline" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+              Agendar Agora
+            </button>
+          </div>
+        </div><!-- /hero-text -->
+
+        <div class="hero-visual">
+          <div class="hero-card-big">
+            <div class="big-thumb">🎨</div>
+            <div class="card-title">Trabalho em Destaque</div>
+            <div class="card-sub">
+              Manga completa com temática de natureza japonesa — 20 horas de trabalho, 
+              realizado ao longo de três sessões.
+            </div>
+            <div class="card-row">
+              <span class="badge badge-red"><i class="fas fa-fire"></i> Blackwork</span>
+              <span class="badge badge-gold"><i class="bx bxs-star"></i> 5.0</span>
+              <span class="badge badge-gray">Cliente Verificado</span>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-pill">
+              <span class="num">1.2k+</span>
+              <span class="lbl">Tattoos feitas</span>
+            </div>
+            <div class="stat-pill">
+              <span class="num">8</span>
+              <span class="lbl">Artistas</span>
+            </div>
+            <div class="stat-pill">
+              <span class="num">12</span>
+              <span class="lbl">Anos ativos</span>
+            </div>
+          </div>
+        </div><!-- /hero-visual -->
+
+      </div>
+    </section><!-- /inicio -->
+
+    <!-- ===========================
+         SEÇÃO 2 — SOBRE
+         =========================== -->
+    <section id="sobre">
+      <div class="sobre-inner">
+
+        <div class="sobre-visual">
+          <!-- Grid de cards com :hover -->
+          <div class="sobre-card">
+            <div class="sc-icon">🏆</div>
+            <div class="sc-txt">
+              <h4>Premiados 3x seguidas</h4>
+              <p>Melhor estúdio do estado pelo Prêmio Tattoo Brasil 2022, 2023 e 2024.</p>
+            </div>
+          </div>
+
+          <div class="sobre-card">
+            <div class="sc-icon">🧴</div>
+            <div class="sc-txt">
+              <h4>Higiene Nível A</h4>
+              <p>Materiais descartáveis, autoclaves certificadas e protocolos rigorosos.</p>
+            </div>
+          </div>
+
+          <div class="sobre-card">
+            <div class="sc-icon">🎨</div>
+            <div class="sc-txt">
+              <h4>Arte 100% Autoral</h4>
+              <p>Designs exclusivos criados para cada cliente. Sem repetições.</p>
+            </div>
+          </div>
+
+          <div class="sobre-card">
+            <div class="sc-icon">🔄</div>
+            <div class="sc-txt">
+              <h4>Retoque Gratuito</h4>
+              <p>Garantia de retoque em 90 dias para todos os trabalhos realizados.</p>
+            </div>
+          </div>
+        </div><!-- /sobre-visual -->
+
+        <div class="sobre-text">
+          <p class="section-tag">Quem somos</p>
+          <h2 class="section-title">
+            Doze anos gravando <em>histórias</em> na pele
+          </h2>
+          <p class="section-body drop-cap">
+            Nascemos da paixão pela arte e pelo respeito ao corpo. O Inkblood foi fundado 
+            em 2013 por um coletivo de artistas que acreditavam que tatuagem é muito mais do 
+            que estética — é identidade, memória e expressão.
+          </p>
+          <p class="section-body">
+            Hoje contamos com uma equipe de oito artistas especializados em estilos distintos, 
+            desde o traço fino delicado até o blackwork intenso. Cada sessão começa com uma 
+            consulta aprofundada para entender sua visão e transformá-la em algo inesquecível.
+          </p>
+        </div>
+
+      </div>
+    </section><!-- /sobre -->
+
+    <!-- ===========================
+         SEÇÃO 3 — SERVIÇOS
+         =========================== -->
+    <section id="servicos">
+      <div class="servicos-inner">
+
+        <div class="section-head">
+          <div>
+            <p class="section-tag">O que fazemos</p>
+            <h2 class="section-title">Nossos <em>Serviços</em></h2>
+          </div>
+          <a href="#contato" class="link-ver">
+            Ver todos os serviços <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="servicos-grid">
+
+          <div class="serv-card s1">
+            <span class="serv-num">01</span>
+            <div class="serv-icon"><i class="fas fa-pen-nib"></i></div>
+            <div class="serv-name">Blackwork</div>
+            <p class="serv-desc">
+              Arte em preto intenso, com formas geométricas, mandala, 
+              ilustração e traço fino. Estilo clássico com execução moderna.
+            </p>
+            <span class="serv-price">A partir de R$ 350 / hora</span>
+          </div>
+
+          <div class="serv-card s2">
+            <span class="serv-num">02</span>
+            <div class="serv-icon"><i class="fas fa-palette"></i></div>
+            <div class="serv-name">Colorido</div>
+            <p class="serv-desc">
+              Trabalhos vibrantes em aquarela, neo-tradicional e realismo 
+              colorido. Pigmentos de alta durabilidade e vivacidade.
+            </p>
+            <span class="serv-price">A partir de R$ 450 / hora</span>
+          </div>
+
+          <div class="serv-card s3">
+            <span class="serv-num">03</span>
+            <div class="serv-icon"><i class="fas fa-eye"></i></div>
+            <div class="serv-name">Realismo</div>
+            <p class="serv-desc">
+              Retratos fotorrealistas, natureza e animais com riqueza de 
+              detalhes. Especialidade da casa reconhecida em todo o Brasil.
+            </p>
+            <span class="serv-price">A partir de R$ 550 / hora</span>
+          </div>
+
+          <div class="serv-card s4">
+            <span class="serv-num">04</span>
+            <div class="serv-icon"><i class="fas fa-magic"></i></div>
+            <div class="serv-name">Cover Up</div>
+            <p class="serv-desc">
+              Transformamos tatuagens antigas em obras novas. Análise gratuita 
+              via WhatsApp com sugestão de composição personalizada.
+            </p>
+            <span class="serv-price">Orçamento sob consulta</span>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /servicos -->
+
+    <!-- ===========================
+         SEÇÃO 4 — PORTFÓLIO
+         =========================== -->
+    <section id="portfolio">
+      <div class="portfolio-inner">
+
+        <div>
+          <p class="section-tag">Trabalhos recentes</p>
+          <h2 class="section-title">Nosso <em>Portfólio</em></h2>
+        </div>
+
+        <div class="port-grid">
+
+          <div class="port-item">
+            <div class="port-thumb">🌸</div>
+            <div class="port-info">
+              <div>
+                <h4>Floral Japonês</h4>
+                <p>Blackwork — Braço</p>
+              </div>
+              <span class="badge badge-red">Vendido</span>
+            </div>
+          </div>
+
+          <div class="port-item">
+            <div class="port-thumb">🐉</div>
+            <div class="port-info">
+              <div>
+                <h4>Dragão Oriental</h4>
+                <p>Colorido — Costas</p>
+              </div>
+              <span class="badge badge-gold">Destaque</span>
+            </div>
+          </div>
+
+          <div class="port-item">
+            <div class="port-thumb">🦅</div>
+            <div class="port-info">
+              <div>
+                <h4>Águia Realista</h4>
+                <p>Realismo — Peitoral</p>
+              </div>
+              <span class="badge badge-gray">Novo</span>
+            </div>
+          </div>
+
+          <div class="port-item">
+            <div class="port-thumb">🌑</div>
+            <div class="port-info">
+              <div>
+                <h4>Geometria Lunar</h4>
+                <p>Blackwork — Costela</p>
+              </div>
+              <span class="badge badge-red">Popular</span>
+            </div>
+          </div>
+
+          <div class="port-item">
+            <div class="port-thumb">🌿</div>
+            <div class="port-info">
+              <div>
+                <h4>Botanica Fina</h4>
+                <p>Traço fino — Antebraço</p>
+              </div>
+              <span class="badge badge-gray">Novo</span>
+            </div>
+          </div>
+
+          <div class="port-item">
+            <div class="port-thumb">🐺</div>
+            <div class="port-info">
+              <div>
+                <h4>Lobo Nórdico</h4>
+                <p>Realismo P&B — Coxa</p>
+              </div>
+              <span class="badge badge-gold">Destaque</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /portfolio -->
+
+    <!-- ===========================
+         SEÇÃO 5 — CONTATO
+         =========================== -->
+    <section id="contato">
+      <div class="contato-inner">
+
+        <div class="contato-text">
+          <p class="section-tag">Fale conosco</p>
+          <h2 class="section-title">
+            Pronto para sua próxima <em>tatuagem?</em>
+          </h2>
+          <p class="section-body">
+            Preencha o formulário ou entre em contato pelos canais abaixo. 
+            Nossa equipe responde em até 24 horas úteis.
+          </p>
+
+          <div class="contato-list">
+            <div class="cont-item">
+              <div class="cont-icon"><i class="bx bxs-map"></i></div>
+              <div class="cont-info">
+                <h5>Endereço</h5>
+                <p>Rua Augusta, 2340 — Consolação, São Paulo/SP</p>
+              </div>
+            </div>
+            <div class="cont-item">
+              <div class="cont-icon"><i class="bx bxl-whatsapp"></i></div>
+              <div class="cont-info">
+                <h5>WhatsApp</h5>
+                <p>(11) 99999-0000</p>
+              </div>
+            </div>
+            <div class="cont-item">
+              <div class="cont-icon"><i class="bx bxs-envelope"></i></div>
+              <div class="cont-info">
+                <h5>E-mail</h5>
+                <p>contato@inkblood.com.br</p>
+              </div>
+            </div>
+            <div class="cont-item">
+              <div class="cont-icon"><i class="bx bxs-time"></i></div>
+              <div class="cont-info">
+                <h5>Horário</h5>
+                <p>Ter–Sab: 10h às 20h</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /contato-text -->
+
+        <!-- Formulário de contato -->
+        <div class="contato-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome"><i class="fas fa-user"></i> Seu nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" />
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone"><i class="fas fa-phone"></i> Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 0000-0000" />
+          </div>
+
+          <div class="form-group">
+            <label for="servico"><i class="fas fa-tag"></i> Tipo de serviço</label>
+            <select id="servico" name="servico">
+              <option value="" disabled selected>Selecione um serviço…</option>
+              <option value="blackwork">Blackwork</option>
+              <option value="colorido">Colorido</option>
+              <option value="realismo">Realismo</option>
+              <option value="coverup">Cover Up</option>
+              <option value="outro">Outro / Não sei ainda</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem"><i class="fas fa-comment"></i> Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre a tatuagem que você quer…"></textarea>
+          </div>
+
+          <button class="btn-submit" type="button">
+            <i class="fas fa-paper-plane"></i>
+            Enviar Mensagem
+          </button>
+        </div><!-- /contato-form -->
+
+      </div>
+    </section><!-- /contato -->
+
+  </main>
+
+  <!-- ===========================
+       RODAPÉ
+       =========================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        INK<span>BLOOD</span>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <p class="copy">&copy; 2025 Inkblood Studio — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
